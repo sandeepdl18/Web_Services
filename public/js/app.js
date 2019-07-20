@@ -11,7 +11,7 @@ fetch('http://puzzle.mead.io/puzzle').then((response) => {
 const weatherform = document.querySelector('form')
 const input = document.querySelector('input')
 const error = document.querySelector('p.error')
-const forecastP = document.querySelector('p.forecast')
+const forecastP =  document.querySelector('p.forecast')
 
 
 // forecastP.textContent = "Fetching weather information for: " + input.value
