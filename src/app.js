@@ -4,6 +4,7 @@ const hbs = require('hbs')
 const request = require('request')
 const geocode = require('../src/utils/geocode')
 const forecast = require('../src/utils/forecast')
+const port = process.env.PORT || 3000
 
 const app = express()
 const publicDirPath = path.join(__dirname, '../public') //public -- directory to serve all static files
@@ -24,7 +25,7 @@ app.set('view engine', 'hbs')
 app.set('views', viewspath)
 hbs.registerPartials(partialspath)
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('Express server is running on port 3000');
 });
 
